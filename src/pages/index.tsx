@@ -2,7 +2,7 @@ import React, { FC, useEffect } from 'react';
 import Router from 'next/router';
 import { GetStaticProps } from 'next';
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
     return {
         props: {}, // will be passed to the page component as props
     };

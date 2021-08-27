@@ -11,7 +11,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return { paths, fallback: false };
 };
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
     return {
         props: {}, // will be passed to the page component as props
     };
