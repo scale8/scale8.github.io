@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2935],{72935:function(e){"use strict";e.exports=JSON.parse('{"md":"# Boolean\\n\\nThe `Boolean` scalar type represents `true` or `false`.\\n"}')}}]);

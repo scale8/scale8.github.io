@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7348],{37348:function(e){"use strict";e.exports=JSON.parse('{"md":"# Enum: NotificationType\\n\\nA set of supported `Notification` types.\\n\\n| Value | Description |\\n|-------|-------------|\\n| WELCOME | *Welcome* |\\n"}')}}]);

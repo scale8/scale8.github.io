@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8999],{48999:function(e){"use strict";e.exports=JSON.parse('{"md":"# Enum: PlatformType\\n\\nA set of supported `PlatformTypes`s used by `Platform`\\n\\n| Value | Description |\\n|-------|-------------|\\n| CUSTOM | *Custom* |\\n| TEMPLATED | *Templated* |\\n"}')}}]);

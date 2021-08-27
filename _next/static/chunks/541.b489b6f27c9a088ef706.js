@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[541],{60541:function(e){"use strict";e.exports=JSON.parse('{"md":"# Enum: DataManagerDateTimeMacros\\n\\nA set of supported `Data Manager Macros` for `DateTime` values.\\n\\n| Value | Description |\\n|-------|-------------|\\n| S8_DATE_TIME_UTC | *S8 Date Time Utc* |\\n"}')}}]);

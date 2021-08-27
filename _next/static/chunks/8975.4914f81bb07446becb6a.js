@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8975],{18975:function(e){"use strict";e.exports=JSON.parse('{"md":"# Enum: AuditAction\\n\\nA set of supported `AuditAction`s used by `Audit`\\n\\n| Value | Description |\\n|-------|-------------|\\n| Create | *Create* |\\n| Clone | *Clone* |\\n| Update | *Update* |\\n| Delete | *Delete* |\\n"}')}}]);

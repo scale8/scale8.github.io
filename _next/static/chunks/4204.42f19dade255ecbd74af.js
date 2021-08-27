@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4204],{4204:function(e){"use strict";e.exports=JSON.parse('{"md":"# Enum: AppType\\n\\nThe type of `App` being created. `MOBILE` support will be added soon!\\n\\n| Value | Description |\\n|-------|-------------|\\n| WEB | An app that is executed within a web browser context |\\n"}')}}]);

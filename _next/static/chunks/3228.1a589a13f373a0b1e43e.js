@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3228],{33228:function(e){"use strict";e.exports=JSON.parse('{"md":"# Float\\n\\nThe `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point).\\n"}')}}]);
