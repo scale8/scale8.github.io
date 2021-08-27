@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[646],{70646:function(n){"use strict";n.exports=JSON.parse('{"md":"# Enum: TimeSlice\\n\\n\\n\\n| Value | Description |\\n|-------|-------------|\\n| YEAR |  |\\n| MONTH |  |\\n| DAY |  |\\n| HOUR |  |\\n| MINUTE |  |\\n"}')}}]);

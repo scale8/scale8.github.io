@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[765],{50765:function(n){"use strict";n.exports=JSON.parse('{"md":"\\n# Mutation\\n\\n\\n---\\n\\n### V\\n\\n```graphql\\nv: String\\n\\n```\\n\\nS8 Version\\n\\n**Arguments**: *None*\\n\\n\\n**Returns: -**\\n\\n| Type | Reference |\\n|------|-----------|\\n| String | [String](/api-docs/string) |\\n\\n\\n\\n\\n"}')}}]);

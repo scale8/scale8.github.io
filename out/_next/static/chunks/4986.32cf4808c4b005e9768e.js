@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4986],{34986:function(e){"use strict";e.exports=JSON.parse('{"md":"# Type: IntBox\\n\\nUsed as a container object\\n\\n| Field | Description | Type | Reference | Deprecated |\\n|-------|-------------|------|-----------|------------|\\n| i | Represents a single integer value | Int | [Int](/api-docs/int) | No |\\n\\n"}')}}]);

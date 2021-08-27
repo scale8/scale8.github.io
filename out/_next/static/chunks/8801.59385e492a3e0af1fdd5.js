@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8801],{48801:function(e){"use strict";e.exports=JSON.parse('{"md":"# Enum: OperationOwner\\n\\nA set of supported `OperationOwner`s used by `Audit`\\n\\n| Value | Description |\\n|-------|-------------|\\n| USER | *User* |\\n| SYSTEM | *System* |\\n"}')}}]);

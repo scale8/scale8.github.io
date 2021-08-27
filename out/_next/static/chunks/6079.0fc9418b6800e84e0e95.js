@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[6079],{16079:function(e){"use strict";e.exports=JSON.parse('{"md":"# Int\\n\\nThe `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.\\n"}')}}]);

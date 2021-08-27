@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1468],{21468:function(e){"use strict";e.exports=JSON.parse('{"md":"# DataMapValue\\n\\nHandles valid data map values. It will return either number | string | boolean. It will also accept either number | string | boolean when used in a Query/Mutation\\n"}')}}]);
