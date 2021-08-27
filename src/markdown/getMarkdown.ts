@@ -63,6 +63,15 @@ export const getDocEntry = async (
     };
 };
 
+export const getDocKeysAsParams = (type: DocType): any[] => {
+    const docs = type === 'api-documentation' ? apiDocs : scale8Docs;
+    return Object.keys(docs).map((slug) => {
+        return {
+            params: { slug },
+        };
+    });
+};
+
 export const getDocKeysForMenu = (
     type: DocType,
 ): {
