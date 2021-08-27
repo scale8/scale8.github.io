@@ -1,0 +1,10 @@
+# Type: {{ type.name }}
+
+{{ type.description }}
+
+| Field | Description | Type | Reference | Deprecated |
+|-------|-------------|------|-----------|------------|
+{% for field in type.fields %}
+| {{ field.name }} | {{ field.description }} | {{ field.type.name }} | {% if field.type.ref %}[{{ field.type.item }}](/api-docs/{{ field.type.ref }}){% else %}*{{ field.type.item }}*{% endif %} | No |
+{% endfor %}
+

@@ -1,0 +1,49 @@
+# Revisioning
+
+## Introduction
+
+A revision contains a snapshot of the data structure you design. In order to be deployed to an environment, the revision must first be locked to prevent any further changes from being made. Once a revision is locked, it can't be unlocked. To start working on your data structure again, you must clone an existing revision. This can be achieved by clicking the "duplicate revision" icon in the "Actions" column.
+
+![Ingest Endpoint Revisions](/img/data-manager/ingest-endpoint-revisions.png)
+
+## Immutability
+
+This revision design guarantees that once deployed, it can't be tampered with and provides confidence to anyone working on data structures that it will not be accidentally saved and deployed. Having an immutable revision structure will enable quick rollback to any previous revision too should there be an issue with the current deployment.
+
+## Revisions
+
+Every new Ingest Endpoint starts with 'Revision 1' that is unlocked and ready to work on. If you wish to create a new revision, this can be done by cloning any of your existing revisions. Revisions can't be deleted as this could potentially remove part of the tree structure required to identify the parent from which it was forked from.
+
+Once in the locked state, a revision must be cloned to start working on the data structure again. A notification will be shown if you are viewing a locked revision, and you will be prompted to clone it if you wish to make any changes to the structure. 
+
+To duplicate an existing revision, locate the "duplicate revision" (copy) icon in the "Actions" column. You will be prompted to enter a new name for your revision.
+
+![Ingest Endpoint Revision - Duplicate Prompt](/img/data-manager/ingest-endpoint-copy-prompt.png)
+
+Once entered, select "Create Revision", and the table view will update with the new revision.
+
+![Ingest Endpoint Revision - Create New Revision](/img/data-manager/ingest-endpoint-new-revision.png)
+
+## Requests and Bytes
+
+Both requests and bytes spark charts are show on the table view. This provides a visual indicator to more quickly establish which revision is currently deployed and also any recent usage.
+
+## Finalising
+
+To finalise a revision, locate the padlock symbol in the "Actions" column and once prompted select "Confirm".
+
+![Ingest Endpoint Revision - Finalising](/img/data-manager/ingest-endpoint-revision-finalise.png)
+
+## Preview Payload
+
+In the "Actions" column, select the eye icon. Once clicked, this will display a layer like the one below.
+
+![Ingest Endpoint Revision - Preview Payload](/img/data-manager/ingest-endpoint-revision-preview.png)
+
+Once the data structure has been filled in, clicking next will show how the JSON payload will be formed.
+
+![Ingest Endpoint Revision - Preview Payload Completed - Next](/img/data-manager/ingest-endpoint-revision-preview-next.png)
+
+## Deploying
+
+Once a revision has been finalised, the locked state will enable it to be deployed to any environment configured within this Ingest Endpoint.

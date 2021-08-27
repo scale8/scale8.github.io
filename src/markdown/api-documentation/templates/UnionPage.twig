@@ -1,0 +1,9 @@
+# Union: {{ union.name }}
+
+{{ union.description }}
+
+| Type | Reference |
+|------|-----------|
+{% for possibleTypes in union.possibleTypes %}
+| {{ possibleTypes.name }} | {% if possibleTypes.ref %}[{{ possibleTypes.item }}](/api-docs/{{ possibleTypes.ref }}){% else %}*{{ possibleTypes.item }}*{% endif %} |
+{% endfor %}

@@ -1,0 +1,76 @@
+# Welcome
+
+## A quick introduction
+
+Scale8 is a BarzantiBeck Ltd company that was founded a little under 8 years ago and currently based in the United Kingdom. We are an independent and self funded group of software developers. We love open-source, data and privacy and these drive most of our product decisions. Our belief is that open-source software leads to more collaboration, total transparency, and a better overall solution.
+
+## Our future goal
+
+Scale8 is a multi-product platform that focuses on delivering high-performance and intuitive solutions for website owners. While we currently offer a number of paid solutions, we started with the idea that we would **open-source all our technology**. We are working hard to deliver these open-source community versions, and our target is to have these ready by the end of the Q4 2021.
+
+## Current offerings
+
+At present, we offer two core products. Scale8 Tag Manager aims to simplify complex tag management. The offering includes a built-in privacy-friendly analytics solution along with a number of new and exciting industry-leading features. Our other product, Scale8 Data Manager instead focuses on collection and transport of data. There are some incredible open-source offerings available, and our aim is to simply complete the journey. 
+
+## Platform architecture
+
+All products have an API-first architecture and this have been developed using Facebook's GraphQL - [Check out our full product API documentation](https://docs.scale8.com/#/). We believe that everything you do via our interface, you should be able to automate using our API. To guarantee this we constructed our user interface using our own API. We don't currently offer versioning or any guarantees (deprecation warnings etc.), but we'll always do our best to explain any up-coming breaking changes. Fixed API versioning is on our roadmap, and we hope to have this work completed shortly.
+
+## Scale8 Tag Manager
+
+### Key features
+
+| Feature | Quick Overview |
+|---|---|
+| [Analytics](/docs/analytics) | We offer built-in privacy-friendly analytics at no extra cost. We have some big plans for this offering and while comparable to other solutions from Plausible Analytics, Fathom and others, we are just getting started. We already make it easily to trigger events with support for event groups and custom data. |
+| [Platforms](/docs/installed-platforms) | Multi-platform support. Currently in testing, this feature enables the rapid building of platforms that are fully version controlled and delivered via Scale8's CDN infrastructure. |
+| [Tags](/docs/tags) | Simple tagging, support for automatic loading, head tags and placement tags. Tags can be load any number of times on the page and we make it incredibly easy to debug your setup. |
+| [Revision&nbsp;Control](/docs/tag-manager-revisions) | Full revision control. Tags, Global entities, Platform Revisions - everything sits under revision control. Clone from any revision at any time and preview any changes live, without having to deploy to an Environment first.  |
+| [Multiple&nbsp;Environments](/docs/tag-manager-environments) | Deploy with confidence and design Environments to support your release workflow. |
+| Easy&nbsp;Debugging | Powerful debugging makes it easy to view complex business logic on any page of your site and in any browser. |
+| [Distributed&nbsp;Actions](/docs/action-group-distributions) | Run experiments with ease. Send X% of your visitors to one action and Y% to the other. Create complex workflows and test with ease. This feature makes A/B testing effortless |
+| [Data&nbsp;Layers](/docs/core-data-containers) | Extensive set of in-built data layers that is constantly expanding. We make it easy to apply logic to data from any source. |
+| [Custom&nbsp;Domain](/docs/tag-manager-environments#creating-a-new-environment) | Use your own custom domain. We support this on all of our current plans. |
+
+### Other service offerings
+
+We're not alone in the Tag Manager space and there are a number of very established solutions such as Google's Tag Manager and Adobe's Dynamic Tag Management. We've set out to offer a transparent service aimed at simplicity and respecting user privacy. There a number of unique features on offer (see list above) that we feel separate us from the competition. We're just getting started too and there are number of exciting features on the way.
+
+### Why use us?
+
+When products like Google Tag Manager and Google Analytics are free, this often means you, or your visitors are the product. We think the time has come to guarantee your visitors their privacy - so many website owners have already chosen to use services from Plausible Analytics and Fathom - and we think this is a great step in the right direction.
+
+For website owners who want to own, control and use their data in a tag manager solution, there are very few options available. Our aim is to simplify tag management, giving website owners more control of **their data** and guaranteeing the **privacy of their visitors**. We are packing our platform with a ton of features that are not on offer by any other solution, and our roadmap should see us delivering on some exciting new releases by the end of the Q4 2021.
+
+### Getting started
+
+We've made it incredibly easy to get started. [Follow our simple guide to Create an Account in just a few minutes](/docs/installing-tag-manager). **We don't require a credit card**, and we give you a full 30 days to evaluate our platform.
+
+## Scale8 Data Manager
+
+### Key features
+
+| Feature | Quick Overview |
+|---|---|
+| [Storage&nbsp;Providers](/docs/environments#storage-providers-1) | We already have support for Google's BigQuery and Amazon's S3. Amazon's Kinesis Firehose and Google's Cloud Storage are in testing and due for release soon. We have many more back-end services on our roadmap too. |
+| [Real-Time&nbsp;Usage](/docs/ingest-endpoint-dashboard) | Monitor your usage in real-time. Plans are based on combined request and data-usage we want to help you manage your usage. |
+| [Simple&nbsp;Data&nbsp;Structures](/docs/data-structure) | Build your data structure with ease. A single data structure definition for every back-end you connect to. |
+| [Revision&nbsp;Control](/docs/revisioning) | Full revision control. Data structures once locked become immutable. Clone from any revision at any time to continue working on a revision. |
+| [Multiple&nbsp;Environments](/docs/environments) | Deploy with confidence and design Environments to support your release workflow. |
+| [Validation&nbsp;Support](/docs/data-structure#applying-validations) | Apply a number of different server-side validations, including regular expressions. |
+| [Macro&nbsp;Support](/docs/data-structure#macro-support) | Use macros to access server-side data such as visitor IP, privacy-friendly visitor hash, visitor country etc. |
+| [Custom&nbsp;Domain](/docs/environments#custom-domains-1) | Use your own custom domain. We support this on all of our current plans. |
+
+### Other service offerings
+
+Configuring your own solution takes quite a bit of development resource and having that solution deployed at the edge in countries all over the world is quite expensive. We were unable to find any good and comparable alternatives to our offering - if you are aware of one, drop us an email and let us know! 
+
+### Why use us?
+
+We've design this service to scale to many billions of requests per day. We offer the ability to design a schema and get setup and sending data in just a few minutes.
+
+If you expect to exceed our plans, please contact us, we are able to offer a very competitively priced solution that will almost certainly be cheaper than trying to host and manage it yourself.
+
+### Getting started
+
+Ready to evaluate our offering? There is **no credit card required**, and we'll have you ingesting data in just a few minutes. [Please follow our guide to get started](/docs/create-account).

@@ -1,0 +1,8 @@
+{% import "QueryMacro.twig" as QueryMacro %}
+
+# {{ type }}
+
+{% for query in queries %}
+{{ QueryMacro.generateQueryBlock(query) }}
+{% endfor %}
+

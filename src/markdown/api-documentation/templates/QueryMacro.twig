@@ -1,0 +1,53 @@
+{% macro generateQueryBlock(query) %}
+
+---
+
+### {{ query.presName }}
+
+```graphql
+{{ query.name }}{% if query.args is not empty %}({{ query.combinedArgs }}){% endif %}: {{ query.return.gqlName }}
+
+```
+
+{% if query.description != "" %}
+{{ query.description }}
+{% endif %}
+
+{% if query.args is not empty %}
+**Arguments: -**
+
+| Name | Description | Type | Reference | Required | Default Value | Deprecated |
+|------|-------------|------|-----------|----------|---------------|------------|
+{% for arg in query.args %}
+| {{ arg.name }} | {{ arg.description | default('--')  }} | {{ arg.type.name }} | {% if arg.type.ref %}[{{ arg.type.item }}](/api-docs/{{ arg.type.ref }}){% else %}*{{ arg.type.item }}*{% endif %} | {% if arg.type.nullable %}No{% else %}Yes{% endif %} | {{ arg.defaultValue }} | No |
+{% endfor %}
+{% else %}
+**Arguments**: *None*
+{% endif %}
+
+{% if query.inputs is not empty %}
+
+{% for input in query.inputs %}
+**{{ input.name }}**
+
+{% if input.description != "" %}
+*{{ input.description }}*
+{% endif %}
+
+| Name | Description | Type | Reference | Required | Default Value | Deprecated |
+|------|-------------|------|-----------|----------|---------------|------------|
+{% for field in input.fields %}
+| {{ field.name }} | {{ field.description | default('--') }} | {{ field.type.name }} | {% if field.type.ref %}[{{ field.type.item }}](/api-docs/{{ field.type.ref }}){% else %}*{{ field.type.item }}*{% endif %} | {% if field.type.nullable %}No{% else %}Yes{% endif %} | {{ field.defaultValue }} | No |
+{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+**Returns: -**
+
+| Type | Reference |
+|------|-----------|
+| {{ query.return.name }} | {% if query.return.ref %}[{{ query.return.item }}](/api-docs/{{ query.return.ref }}){% endif %} |
+
+
+{% endmacro %}

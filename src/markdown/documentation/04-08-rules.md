@@ -1,0 +1,51 @@
+# Rules
+
+## A quick introduction
+
+A Rule encapsulates Events, Conditions, Exceptions and Actions. It is contained within a Rule Group and can compete with other rules. The order here is important, as Rules are evaluated in serial. A Rule is selected once it satisfies the 'IF' statement - that requires all specified Events, Conditions and Exceptions to pass in order to be triggered.
+
+By default, a Rule can only be run once, however we do provide the ability to enable your Rule to repeat itself. There are number of cases this can be useful such as tracking multiple events or refreshing adverts on a page.
+
+Once a Rule has been selected to run, it will execute the Actions contained in the 'THEN' section. If the Rule is set to repeat, then all Event states will be automatically cleared, ready to be re-triggered. To prevent repeated Rules from executing again too quickly, we provide a delay time in seconds that much be reached before this Rule can be executed for an Nth time.
+
+![Tag Manager - Rules](/img/tag-manager/tag-manager-rules.png)
+
+## Creating a Rule
+
+To create a Rule, select the "Add Rule" button at the bottom of the chosen Rule Group container. When clicked a right-side window pane will appear and prompt you to enter a name for your new Rule.
+
+### Using a Global Trigger
+
+There is an option to use a globally defined trigger instead of specifying Events, Conditions or Exceptions in order to build your own Trigger. More information about Global Triggers can be found here.
+
+### Repeatable Rules
+
+After the option to specify a global trigger, there is an option to enable this Rule to repeat. By default, once enabled a Rule will repeat without any delay. There is a secondary option therefore to specify a delay to prevent the Rule from triggering too soon after the previous execution.
+
+### Saving your new Rule
+
+Finally, click the "Create Rule" button, and your new Rule will appear in your selected Rule Group. It is then possible to move that Rule up or down using the Rule menu.
+
+## Managing a Rule
+
+### Accessing the menu
+
+To view the Rule menu, hover over the icon containing three dots to the right of the Rule container. A menu will reveal itself on mouseover.
+
+![Tag Manager - Rules Menu](/img/tag-manager/tag-manager-rule-menu.png)
+
+### Editing a Rule
+
+To edit the name of the Rule, select the 'Pencil' icon. Once updated, save using the button at the bottom to commit your changes.
+
+### Re-ordering a Rule
+
+Rules can be re-ordered, enabling them to be moved up and down. Rules are evaluated in the order specified here, so it is important to make sure they are the in correct position.
+
+### Duplicating a Rule
+
+A Rule and all its contents can be duplicated by selecting the 'Copy' icon in the Rule Group menu. You will be prompted to enter a new name for your Rule before the whole structure will be cloned.
+
+### Deleting a Rule
+
+If a Rule is deleted, the Rule container along with Events, Conditions, Exceptions etc. will all be deleted too. To delete the Rule, locate the menu and select the 'Trash' icon and confirm the action when prompted. You will be informed of what will be deleted when running this delete action.

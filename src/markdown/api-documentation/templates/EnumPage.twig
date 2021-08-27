@@ -1,0 +1,9 @@
+# Enum: {{ enum.name }}
+
+{{ enum.description }}
+
+| Value | Description |
+|-------|-------------|
+{% for value in enum.values %}
+| {{ value.name }} | {{ value.description }} |
+{% endfor %}

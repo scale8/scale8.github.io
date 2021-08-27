@@ -1,0 +1,29 @@
+{% import "QueryMacro.twig" as QueryMacro %}
+
+# {{ model.name }}
+
+{{ model.description }}
+
+| Field | Description | Type | Reference | Nullable | Deprecated |
+|-------|-------------|------|-----------|----------|------------|
+{% for field in model.fields %}
+| {{ field.name }} | {{ field.description }} | {{ field.type.name }} | {% if field.type.ref %}[{{ field.type.item }}](/api-docs/{{ field.type.ref }}){% else %}*{{ field.type.item }}*{% endif %} | {% if field.type.nullable %}Yes{% else %}No{% endif %} | No |
+{% endfor %}
+
+{% if model.queries is not empty %}
+## Queries
+
+*Queries provide a function on the graph to access {{ model.name }} entities. This should be considered the same as RESTful 'GET'*
+{% for query in model.queries %}
+{{ QueryMacro.generateQueryBlock(query) }}
+{% endfor %}
+{% endif %}
+
+{% if model.mutations is not empty %}
+## Mutations
+
+*Mutations enable us to create, modify and delete {{ model.name }} entities. POST/PUT/DELETE methods in a RESTful API would typically provide this functionality*
+{% for mutation in model.mutations %}
+{{ QueryMacro.generateQueryBlock(mutation) }}
+{% endfor %}
+{% endif %}

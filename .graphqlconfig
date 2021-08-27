@@ -1,0 +1,17 @@
+{
+    "name": "Remote Schema",
+    "schemaPath": "remote-schema.graphql",
+    "extensions": {
+        "endpoints": {
+            "Remote GraphQL Endpoint": {
+                "url": "https://api-dev.scale8.com:8443/graphql",
+                "headers": {
+                    "user-agent": "JS GraphQL",
+                    "uid": "5edb6a6a5a100367467400ce",
+                    "token": "dev"
+                },
+                "introspect": true
+            }
+        }
+    }
+}
