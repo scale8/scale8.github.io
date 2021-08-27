@@ -61,7 +61,7 @@ const HomeDocsHeader: FC<HomeDocsHeaderProps> = (
                 <Box height={100} display="flex" alignItems="center">
                     <div className={classes.logo}>
                         <Logo width={30} />
-                        <Link href={''}>Scale8</Link>
+                        <Link href="https://scale8.com/">Scale8</Link>
                     </div>
                 </Box>
             )}

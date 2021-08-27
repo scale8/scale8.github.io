@@ -38,7 +38,7 @@ const HomeNavigationContainer: FC<{ children?: ReactNode }> = (props: {
             <Toolbar className={classes.toolbar}>
                 <div className={classes.logo}>
                     <Logo width={30} />
-                    <Link href="homepage">Scale8</Link>
+                    <Link href="https://scale8.com/">Scale8</Link>
                 </div>
                 {props.children}
             </Toolbar>
