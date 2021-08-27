@@ -5,7 +5,7 @@ const HomePage: FC = () => {
     useEffect(() => {
         const { pathname } = Router;
         if (pathname == '/') {
-            Router.push('/hello-nextjs');
+            Router.push('/docs').then();
         }
     });
     return null;
