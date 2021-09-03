@@ -1,9 +1,14 @@
-import { FC } from 'react';
-import Navigate from '../../components/atoms/Next/Navigate';
-import { toTagTester } from '../../utils/NavigationPaths';
+import { FC, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-const TestersRoot: FC = () => {
-    return <Navigate to={toTagTester} />;
+const TesterRoot: FC = () => {
+    const router = useRouter();
+
+    useEffect(() => {
+        router.push('/tester/tag-tester').then();
+    });
+
+    return <div />;
 };
 
-export default TestersRoot;
+export default TesterRoot;
