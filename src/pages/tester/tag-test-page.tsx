@@ -1,7 +1,6 @@
 import { FC, useEffect } from 'react';
 import { Box, Typography } from '@material-ui/core';
 import Head from 'next/head';
-import TestersSection from '../../containers/global/TestersSection';
 
 const TagTestPageContent: FC = () => {
     useEffect(() => {
@@ -34,9 +33,7 @@ const TagTestPage: FC = () => {
                 <title>Scale8 - Tag Test</title>
                 <meta name="description" content="Scale8 - Tag Test." />
             </Head>
-            <TestersSection>
-                <TagTestPageContent />
-            </TestersSection>
+            <TagTestPageContent />
         </>
     );
 };

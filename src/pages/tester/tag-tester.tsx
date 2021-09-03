@@ -1,11 +1,10 @@
 import { ChangeEvent, FC, FormEvent, useEffect, useState } from 'react';
 import { Box, Button, TextField, Typography } from '@material-ui/core';
-import Navigate from '../../components/atoms/Next/Navigate';
 import Head from 'next/head';
-import TestersSection from '../../containers/global/TestersSection';
-import { toTagTestPage } from '../../utils/NavigationPaths';
+import { useRouter } from 'next/router';
 
 const TagTesterContent: FC = () => {
+    const router = useRouter();
     const [edit, setEdit] = useState(true);
     const [snippet, setSnippet] = useState('');
 
@@ -53,7 +52,9 @@ const TagTesterContent: FC = () => {
         );
     }
 
-    return <Navigate to={toTagTestPage} />;
+    router.push('/tester/tag-test-page').then();
+
+    return <div />;
 };
 
 const TagTester: FC = () => {
@@ -63,9 +64,7 @@ const TagTester: FC = () => {
                 <title>Scale8 - Tag Test</title>
                 <meta name="description" content="Scale8 - Tag Test." />
             </Head>
-            <TestersSection>
-                <TagTesterContent />
-            </TestersSection>
+            <TagTesterContent />
         </>
     );
 };
