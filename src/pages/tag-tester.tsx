@@ -52,7 +52,7 @@ const TagTesterContent: FC = () => {
         );
     }
 
-    router.push('/tester/tag-test-page').then();
+    router.push('/tag-test-page').then();
 
     return <div />;
 };
